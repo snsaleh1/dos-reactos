@@ -6,6 +6,7 @@ class AddTestimonialPage extends Component {
     formData: {
       name: '',
       relationship: 'Acquaintance, Friend, Supervisor, etc',
+      tesType: '',
       yearsKnown: '0',
       quote: ''
     }
@@ -32,7 +33,7 @@ class AddTestimonialPage extends Component {
         <h1>Add Testimonial</h1>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Name (required)</label>
+            <label>Name (required): </label>
             <input
               className="form-control"
               name="name"
@@ -42,7 +43,7 @@ class AddTestimonialPage extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Relationship (required)</label>
+            <label>Relationship to Caleb (required): </label>
             <input
               className="form-control"
               name="relationship"
@@ -52,7 +53,17 @@ class AddTestimonialPage extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Years Known</label>
+            <label>Testimonial Type (Personal/Professional): </label>
+            <input
+              className="form-control"
+              name="tesType"
+              value={this.state.formData.breed}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label>Years Known: </label>
             <input
               className="form-control"
               name="yearsKnown"
@@ -61,7 +72,7 @@ class AddTestimonialPage extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Testimonial</label>
+            <label>Testimonial: </label>
             <input
               className="form-control"
               name="quote"

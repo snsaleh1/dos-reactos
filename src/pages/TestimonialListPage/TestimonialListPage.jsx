@@ -5,7 +5,7 @@ import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 function TestimonialListPage(props) {
   return (
     <>
-      <h1>Testimonials List</h1>
+      <h1>Caleb's Friends have said...</h1>
       <div className='TestimonialListPage-grid'>
         {props.testimonials.map(testimonial =>
           <TestimonialCard

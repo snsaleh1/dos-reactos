@@ -11,6 +11,8 @@ function TestimonialCard({testimonial, handleDeleteTestimonial}) {
         <dl>
           <dt>Relationship: </dt>
           <dd>{testimonial.relationship}</dd>
+          <dt>Testimonial Type: </dt>
+          <dd>{testimonial.tesType}</dd>
           <dt>Years Known: </dt>
           <dd>{testimonial.yearsKnown}</dd>
           <dt>Testimonial: </dt>
