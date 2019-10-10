@@ -2,21 +2,23 @@
     min-height: 100vh;
     display: grid;
     grid-template-rows: 7vmin auto;
-  }
+}
   
   .App-header {
-    background-color: var(--black);
-    display: flex;
+    background: #00467f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00467f, #a5cc82); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00467f, #a5cc82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2vmin;
     font-size: 2.5vmin;
-    color: var(--background);
+    color: white;
   }
   
   .App main {
-    background-color: var(--background);
-    display: flex;
+    background: #00467f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00467f, #a5cc82); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00467f, #a5cc82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;

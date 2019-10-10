@@ -51,7 +51,7 @@ class App extends Component {
         <header className="App-header">
           React Testimonials CRUD
           <nav>
-            <NavLink exact to='/'>Porfolio Home</NavLink> /*link to deployed portfolio page*/
+            <NavLink exact to='/'>Back to Portfolio</NavLink>
             &nbsp;&nbsp;&nbsp;
             <NavLink exact to='/'>Testimonials LIST</NavLink>
             &nbsp;&nbsp;&nbsp;

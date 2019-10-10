@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './AddTestimonialPage.css';
 
 class AddTestimonialPage extends Component {
   state = {
@@ -30,7 +31,7 @@ class AddTestimonialPage extends Component {
   render() {
     return (
       <>
-        <h1>Add Testimonial</h1>
+        <h1 className="addTitle">Add Testimonial</h1>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>Name (required): </label>
