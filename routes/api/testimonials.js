@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var testimonialsCtrl = require('../../controllers/api/testimonials');
 
-/* GET /api/puppies */
 router.get('/', testimonialsCtrl.index);
 router.get('/:id', testimonialsCtrl.show);
 router.post('/', testimonialsCtrl.create);

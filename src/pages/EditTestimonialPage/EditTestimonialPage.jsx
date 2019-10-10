@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 class EditTestimonialPage extends Component {
     state = {
         invalidForm: false,
-        formData: this.props.location.state.puppy
+        formData: this.props.location.state.testimonial
     };
 
     formRef = React.createRef();
