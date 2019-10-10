@@ -43,6 +43,7 @@ class AddTestimonialPage extends Component {
               required
             />
           </div>
+          <br></br>
           <div className="form-group">
             <label>Relationship to Caleb (required): </label>
             <input
@@ -53,6 +54,7 @@ class AddTestimonialPage extends Component {
               required
             />
           </div>
+          <br></br>
           <div className="form-group">
             <label>Testimonial Type (Personal/Professional): </label>
             <input
@@ -63,6 +65,7 @@ class AddTestimonialPage extends Component {
               required
             />
           </div>
+          <br></br>
           <div className="form-group">
             <label>Years Known: </label>
             <input
@@ -72,6 +75,7 @@ class AddTestimonialPage extends Component {
               onChange={this.handleChange}
             />
           </div>
+          <br></br>
           <div className="form-group">
             <label>Testimonial: </label>
             <input
@@ -81,6 +85,7 @@ class AddTestimonialPage extends Component {
               onChange={this.handleChange}
             />
           </div>
+          <br></br>
           <button
             type="submit"
             className="btn"

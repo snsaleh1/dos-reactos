@@ -1,0 +1,6 @@
+.btn btn-xs btn-warning {
+    color: var(--accent);
+    padding: 1vmin;
+    border-radius: 1vmin;
+    text-decoration: none !important;
+}
