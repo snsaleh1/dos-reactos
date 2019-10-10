@@ -1,18 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function ProductCard({product, handleDeleteProduct}) { 
+function TestimonialCard({testimonial, handleDeleteTestimonial}) { 
   return (
     <div className='panel panel-default'>
       <div className="panel-heading">
-        <h3 className='panel-title'>{product.name}</h3>
+        <h3 className='panel-title'>{testimonial.name}</h3>
       </div>
       <div className='panel-body'>
         <dl>
-          <dt>Product Type: </dt>
-          <dd>{product.type}</dd>
-          <dt>Price: </dt>
-          <dd>{product.price}</dd>
+          <dt>Relationship: </dt>
+          <dd>{testimonial.relationship}</dd>
+          <dt>Years Known: </dt>
+          <dd>{testimonial.yearsKnown}</dd>
+          <dt>Testimonial: </dt>
+          <dd>{testimonial.quote}</dd>
         </dl>
       </div>
       <div className='panel-footer'>
@@ -27,14 +29,14 @@ function ProductCard({product, handleDeleteProduct}) {
           className='btn btn-xs btn-warning'
           to={{
             pathname: '/edit',
-            state: {product}
+            state: {testimonial}
           }}
         >
           EDIT
         </Link>
         <button
           className='btn btn-xs btn-danger margin-left-10'
-          onClick={() => handleDeleteProduct(product._id)}
+          onClick={() => handleDeleteTestimonial(testimonial._id)}
         >
           DELETE
         </button>
@@ -43,4 +45,4 @@ function ProductCard({product, handleDeleteProduct}) {
   );
 }
 
-export default ProductCard;
+export default TestimonialCard;

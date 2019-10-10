@@ -78,3 +78,5 @@ class EditTestimonialPage extends Component {
         );
     }
 }
+
+export default EditTestimonialPage

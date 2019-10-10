@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 
-class AddProductPage extends Component {
+class AddTestimonialPage extends Component {
   state = {
     invalidForm: true,
     formData: {
       name: '',
-      breed: 'Mixed',
-      age: '0'
+      relationship: 'Acquaintance, Friend, Supervisor, etc',
+      yearsKnown: '0',
+      quote: ''
     }
   };
 
@@ -14,7 +15,7 @@ class AddProductPage extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.handleAddProduct(this.state.formData);
+    this.props.handleAddTestimonial(this.state.formData);
   };
 
   handleChange = e => {
@@ -28,10 +29,10 @@ class AddProductPage extends Component {
   render() {
     return (
       <>
-        <h1>Add Product</h1>
+        <h1>Add Testimonial</h1>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Pup's Name (required)</label>
+            <label>Name (required)</label>
             <input
               className="form-control"
               name="name"
@@ -41,20 +42,29 @@ class AddProductPage extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Pup's Breed (required)</label>
+            <label>Relationship (required)</label>
             <input
               className="form-control"
-              name="breed"
+              name="relationship"
               value={this.state.formData.breed}
               onChange={this.handleChange}
               required
             />
           </div>
           <div className="form-group">
-            <label>Pup's Age</label>
+            <label>Years Known</label>
             <input
               className="form-control"
-              name="age"
+              name="yearsKnown"
+              value={this.state.formData.age}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label>Testimonial</label>
+            <input
+              className="form-control"
+              name="quote"
               value={this.state.formData.age}
               onChange={this.handleChange}
             />
@@ -64,7 +74,7 @@ class AddProductPage extends Component {
             className="btn"
             disabled={this.state.invalidForm}
           >
-            ADD PUPPY
+            ADD Testimonial
           </button>
         </form>
       </>
@@ -72,4 +82,4 @@ class AddProductPage extends Component {
   }
 }
 
-export default AddPuppyPage;
+export default AddTestimonialPage;

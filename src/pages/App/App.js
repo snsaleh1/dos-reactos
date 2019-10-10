@@ -21,7 +21,7 @@ class App extends Component {
   handleUpdateTestimonial = async updatedTesData => {
     const updatedTestimonial = await testimonialAPI.update(updatedTesData);
     const newTestimonialsArray = this.state.testimonials.map(p => 
-      p._id === updatedTestimonials._id ? updatedTestimonial : p
+      p._id === updatedTestimonial._id ? updatedTestimonial : p
     );
     this.setState(
       {testimonials: newTestimonialsArray},
@@ -41,7 +41,7 @@ class App extends Component {
   /*--- Lifecycle Methods ---*/
 
   async componentDidMount() {
-    const testimonials = await testimonialsAPI.getAll();
+    const testimonials = await testimonialAPI.getAll();
     this.setState({testimonials});
   }
 
