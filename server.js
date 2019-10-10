@@ -5,7 +5,7 @@ var favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const cors = require('cors')
 
-require('dotenv').config();
+require('dotenv').config({ debug: process.env.DEBUG });
 
 require('./config/database');
 
